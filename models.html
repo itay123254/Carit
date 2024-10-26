@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>דגמי BMW</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            margin: 0;
+            background-color: #f4f4f4; /* הוספת צבע רקע */
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav .logo img {
+            width: 80px;
+            cursor: pointer;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .models {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+        .model {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            width: 250px; /* הגדל את הרוחב */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: white; /* הוספת צבע רקע לכל מודל */
+            transition: transform 0.2s; /* הוספת אנימציה */
+        }
+        .model:hover {
+            transform: scale(1.05); /* הגדלת מודל כאשר העכבר עליו */
+        }
+        .model img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .model button {
+            margin-top: 10px;
+            padding: 8px 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .model button:hover {
+            background-color: #0056b3;
+        }
+        .social-share {
+            margin-top: 10px;
+        }
+        .social-share a {
+            margin: 0 5px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        .reviews {
+            margin-top: 10px;
+            text-align: left;
+        }
+        .reviews textarea {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        .reviews button {
+            margin-top: 5px;
+            padding: 5px 10px;
+            background-color: #28a745;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+        }
+        .reviews button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/640px-BMW.svg.png" alt="לוגו BMW"></a>
+    <ul>
+        <li><a href="models.html">דגמים</a></li>
+        <li><a href="contact.html">יצירת קשר</a></li>
+        <li><a href="index.html">דף הבית</a></li>
+    </ul>
+</nav>
+
+<div class="models">
+    <!-- BMW X1 -->
+    <div class="model">
+        <img src="https://www.automag.co.il/wp-content/uploads/2019/09/bmw-x1-new-1-e1568693516783.jpg" alt="BMW X1">
+        <h2>BMW X1</h2>
+        <p>רכב פנאי קומפקטי עם ביצועים מרשימים ויכולות תמרון גבוהות בעיר.</p>
+        <p><strong>מחיר: ₪250,000</strong></p>
+        <button onclick="window.location.href='bmw_x1.html'">מידע נוסף</button>
+        
+        <div class="reviews">
+            <h4>ביקורות</h4>
+            <textarea rows="2" placeholder="השאירו את הביקורת שלכם כאן..."></textarea>
+            <button>שלח ביקורת</button>
+            <div class="social-share">
+                <p>שתף:</p>
+                <a href="#">פייסבוק</a>
+                <a href="#">טוויטר</a>
+                <a href="#">אינסטגרם</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- BMW X5 -->
+    <div class="model">
+        <img src="https://www.bmw.co.il/content/dam/bmw/marketIL/bmw_co_il/all_models/x/x5/37982-BMW-Digital-Pics-X5-890x502.png" alt="BMW X5">
+        <h2>BMW X5</h2>
+        <p>רכב פנאי יוקרתי עם מרחב נרחב לנוסעים וטכנולוגיה מתקדמת.</p>
+        <p><strong>מחיר: ₪350,000</strong></p>
+        <button onclick="window.location.href='bmw_x5.html'">מידע נוסף</button>
+        
+        <div class="reviews">
+            <h4>ביקורות</h4>
+            <textarea rows="2" placeholder="השאירו את הביקורת שלכם כאן..."></textarea>
+            <button>שלח ביקורת</button>
+            <div class="social-share">
+                <p>שתף:</p>
+                <a href="#">פייסבוק</a>
+                <a href="#">טוויטר</a>
+                <a href="#">אינסטגרם</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- BMW X3 -->
+    <div class="model">
+        <img src="https://www.cartecgroup.com/app/uploads/2024/01/1706704298FRONTSIDE-15BZ-1706704255100.png" alt="BMW X3">
+        <h2>BMW X3</h2>
+        <p>רכב קומפקטי עם חוויית נהיגה דינאמית ומתוחכמת.</p>
+        <p><strong>מחיר: ₪300,000</strong></p>
+        <button onclick="window.location.href='bmw_x3.html'">מידע נוסף</button>
+        
+        <div class="reviews">
+            <h4>ביקורות</h4>
+            <textarea rows="2" placeholder="השאירו את הביקורת שלכם כאן..."></textarea>
+            <button>שלח ביקורת</button>
+            <div class="social-share">
+                <p>שתף:</p>
+                <a href="#">פייסבוק</a>
+                <a href="#">טוויטר</a>
+                <a href="#">אינסטגרם</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- BMW X4 -->
+    <div class="model">
+        <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/163337/x4-exterior-left-front-three-quarter.jpeg?isig=0&q=80" alt="BMW X4">
+        <h2>BMW X4</h2>
+        <p>עיצוב ספורטיבי ומרהיב, יחד עם ביצועים מתקדמים.</p>
+        <p><strong>מחיר: ₪330,000</strong></p>
+        <button onclick="window.location.href='bmw_x4.html'">מידע נוסף</button>
+        
+        <div class="reviews">
+            <h4>ביקורות</h4>
+            <textarea rows="2" placeholder="השאירו את הביקורת שלכם כאן..."></textarea>
+            <button>שלח ביקורת</button>
+            <div class="social-share">
+                <p>שתף:</p>
+                <a href="#">פייסבוק</a>
+                <a href="#">טוויטר</a>
+                <a href="#">אינסטגרם</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- BMW X6 -->
+    <div class="model">
+        <img src="https://cdn.findyourbmw.ae/public/uploads/catalog/vehicles/thumb/image_png_31EXA_2025_475_KPHP_30.png" alt="BMW X6">
+        <h2>BMW X6</h2>
+        <p>רכב פנאי בעיצוב קופה נועז וביצועים עוצמתיים.</p>
+        <p><strong>מחיר: ₪400,000</strong></p>
+        <button onclick="window.location.href='bmw_x6.html'">מידע נוסף</button>
+        
+        <div class="reviews">
+            <h4>ביקורות</h4>
+            <textarea rows="2" placeholder="השאירו את הביקורת שלכם כאן..."></textarea>
+            <button>שלח ביקורת</button>
+            <div class="social-share">
+                <p>שתף:</p>
+                <a href="#">פייסבוק</a>
+                <a href="#">טוויטר</a>
+                <a href="#">אינסטגרם</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- BMW X7 -->
+    <div class="model">
+        <img src="https://www.bmw.in/content/dam/bmw/common/all-models/x-series/x7/2023/x7-lci-offer.png" alt="BMW X7">
+        <h2>BMW X7</h2>
+        <p>המיניוואן היוקרתי עם מרחב מושלם למשפחה.</p>
+        <p><strong>מחיר: ₪450,000</strong></p>
+        <button onclick="window.location.href='bmw_x7.html'">מידע נוסף</button>
+        
+        <div class="reviews">
+            <h4>ביקורות</h4>
+            <textarea rows="2" placeholder="השאירו את הביקורת שלכם כאן..."></textarea>
+            <button>שלח ביקורת</button>
+            <div class="social-share">
+                <p>שתף:</p>
+                <a href="#">פייסבוק</a>
+                <a href="#">טוויטר</a>
+                <a href="#">אינסטגרם</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

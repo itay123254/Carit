@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW X4 - מידע נוסף</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            top: 0;
+        }
+        nav .logo img {
+            width: 80px;
+            cursor: pointer;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        nav ul li a:hover {
+            color: #888;
+        }
+        .content {
+            padding: 100px 20px;
+        }
+        h1 {
+            color: blue;
+        }
+        .image-gallery {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .image-gallery img {
+            max-width: 45%; /* Adjusted width for two images */
+            border-radius: 8px;
+        }
+        h3 {
+            margin-top: 40px;
+        }
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            width: 100%;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/640px-BMW.svg.png" alt="לוגו BMW"></a>
+        <ul>
+            <li><a href="models.html">דגמים</a></li>
+            <li><a href="contact.html">יצירת קשר</a></li>
+            <li><a href="index.html">דף הבית</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1>BMW X4</h1>
+        <img src="https://cache.bmwusa.com/cosy.arox?pov=walkaround&brand=WBBM&vehicle=25XV&client=byoc&paint=P0300&fabric=FKHSW&sa=S01CE,S01VU,S02NH,S02TB,S02VF,S0302,S0319,S0322,S03AG,S03DZ,S0402,S0420,S0423,S0430,S0459,S0481,S0493,S0494,S04AW,S04KN,S04U0,S04UR,S0534,S0552,S05AC,S05AS,S05AV,S0676,S06AC,S06AK,S06C4,S06U3,S0710,S0715,S0760,S0775&date=20240802&quality=70&bkgnd=transparent&resp=png&width=600&angle=40" alt="BMW X4" style="max-width: 100%; height: auto;">
+        <p>BMW X4 הוא קופה SUV המציעה עיצוב ייחודי וביצועים מצוינים.</p>
+        
+        <h3>תמונות</h3>
+        <div class="image-gallery">
+            <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/163337/x4-exterior-left-front-three-quarter.jpeg?isig=0&q=80" alt="BMW X4 קדימה">
+            <img src="https://www.superbltd.co.il/wp-content/uploads/2019/07/BMW_X4.jpg" alt="BMW X4 אחורה">
+        </div>
+
+        <h3>סרטונים</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HRPpMogQVao" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4GSUXy76qGc" frameborder="0" allowfullscreen></iframe>
+
+        <h3>מיקום בישראל</h3>
+        <p>המכונית זמינה אצל סוכנויות BMW ברחבי הארץ.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 BMW. כל הזכויות שמורות.</p>
+    </footer>
+</body>
+</html>

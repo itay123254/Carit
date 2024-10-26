@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background-color: #000;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px; /* ריווח פנימי לכפתור */
+    border-radius: 5px; /* עגלגל את הפינות */
+    transition: background-color 0.3s, color 0.3s; /* אנימציה */
+}
+
+nav ul li a:hover {
+    background-color: #444; /* צבע רקע בעת ריחוף */
+    color: #fff; /* צבע טקסט בעת ריחוף */
+}
+
+.hero {
+    background-image: url('https://media.bmwblog.com/wp-content/uploads/2020/08/BMW-7-Series.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin: 0;
+    text-shadow: 6px 6px 10px rgb(9, 16, 87);
+}
+
+.hero p {
+    font-size: 24px;
+    margin-top: 10px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+.content {
+    padding: 40px;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.car-models {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.model {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.model img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s; /* הוספת אנימציה */
+}
+
+.button:hover {
+    background-color: #555; /* שינוי צבע בעת ריחוף */
+    transform: scale(1.05); /* הגדלת הכפתור בעת ריחוף */
+}

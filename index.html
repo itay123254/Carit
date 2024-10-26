@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW - דף הבית</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            text-align: right;
+            direction: rtl;
+        }
+        /* סרגל עליון */
+        nav {
+            background-color: #000;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            direction: ltr; 
+        }
+        nav .logo img {
+            width: 100px;
+            cursor: pointer;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            direction: rtl; 
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            color: #888;
+        }
+        /* שאר התוכן */
+        .hero {
+            background-image: url('https://i.pinimg.com/736x/92/78/e0/9278e0ee2edac445e0edb72ad923cb69.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 50px;
+            margin: 0;
+            text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.7);
+            z-index: 2;
+        }
+        .hero p {
+            font-size: 24px;
+            margin-top: 10px;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+            z-index: 2;
+        }
+        .new-models {
+            background-color: #FFD700; /* צבע רקע */
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin: 20px;
+        }
+        .recommendations, .news, .gallery, .faq, .testimonials {
+            padding: 40px 20px;
+            text-align: right;
+            background-color: #f5f5f5; /* צבע רקע לקטעים */
+            border-radius: 10px; /* פינות מעוגלות */
+            margin: 20px; /* רווח בין הקטעים */
+        }
+        .recommendations h2, .news h2, .gallery h2, .faq h2, .testimonials h2 {
+            margin-bottom: 20px;
+        }
+        .recommendations p, .news p, .faq p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            background-color: #f9f9f9;
+        }
+        .gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .video-container {
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .video-container iframe {
+            width: 560px;
+            height: 315px;
+            margin: 10px;
+            border: none;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .video-container iframe:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .social-media {
+            margin-top: 20px;
+        }
+        .social-media a {
+            margin: 0 10px;
+            color: #000;
+        }
+        .social-media img {
+            width: 30px;
+            height: 30px;
+        }
+        .testimonials {
+            background-color: #f3f3f3;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .testimonial {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        /* כפתורי הנעה לפעולה */
+        .cta-button {
+            display: inline-block;
+            background-color: #000;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .cta-button:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/640px-BMW.svg.png" alt="לוגו BMW"></a>
+        <ul>
+            <li><a href="models.html">דגמים</a></li>
+            <li><a href="contact.html">יצירת קשר</a></li>
+            <li><a href="index.html">דף הבית</a></li>
+            <li><a href="faq.html">שאלות ותשובות</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h1>BMW - המכונית המושלמת</h1>
+        <p>מכוניות יוקרה חדשניות בעידן המודרני.</p>
+    </div>
+
+    <!-- קטע דגמים חדשים -->
+    <div class="new-models">
+        🚗 גלה את הדגמים החדשים של BMW: 
+        <a href="models.html" class="cta-button">לראות עוד דגמים</a>
+    </div>
+
+    <div class="recommendations">
+        <h2>המלצות על דגמים</h2>
+        <p>אנו ממליצים על הדגמים הבאים:</p>
+        <p>1. BMW X1 - רכב פנאי קומפקטי עם ביצועים מרשימים.</p>
+        <p>2. BMW X5 - רכב פנאי יוקרתי עם טכנולוגיה מתקדמת.</p>
+        <p>3. BMW M5 - ספורטיבית עם ביצועים יוצאים מן הכלל.</p>
+    </div>
+
+    <div class="news">
+        <h2>חדשות ועדכונים</h2>
+        <p>גלה את הדגמים החדשים של BMW שיצאו לשוק!</p>
+        <p>יש מבצעים מיוחדים על רכבים נבחרים - אל תפספסו!</p>
+    </div>
+
+    <div class="gallery">
+        <h2>גלריית דגמים</h2>
+        <img src="https://media.ed.edmunds-media.com/bmw/x5/2025/oem/2025_bmw_x5_4dr-suv_xdrive40i_fq_oem_1_1280.jpg" alt="BMW X5">
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/BMW/iX/11610/1714375959641/front-left-side-47.jpg" alt="BMW iX">
+        <img src="https://www.bmw.co.il/content/dam/bmw/common/all-models/m-series/m5-sedan/2021/Overview/bmw-m5-cs-onepager-sd-individual-03.jpg" alt="BMW M5">
+    </div>
+
+    <div class="faq">
+        <h2>שאלות נפוצות</h2>
+        <p><strong>האם יש אפשרות לנסות את הרכב?</strong> כן, יש אפשרות לנסיעות מבחן.</p>
+        <p><strong>האם ניתן להזמין רכב בהזמנה אישית?</strong> כן, אנו מציעים הזמנות מותאמות אישית.</p>
+        <p><strong>האם יש אפשרויות מימון?</strong> כן, יש לנו אפשרויות מימון מותאמות אישית.</p>
+    </div>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/YsRuhCSz-Y0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/IoiKgSQiER4" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/-8UPg6hyDBg" allowfullscreen></iframe>
+    </div>
+
+    <div class="testimonials">
+        <h2>לקוחות מרוצים</h2>
+        <div class="testimonial">"מניסיון, BMW היא אחת המכוניות הטובות ביותר שקניתי!" - דוד</div>
+        <div class="testimonial">"העיצוב והנוחות של ה-X5 פשוט מדהימים!" - יעל</div>
+        <div class="testimonial">"חווית הנהיגה ב-M5 היא חלומית!" - רון</div>
+    </div>
+
+    <div class="social-media">
+        <h2>עקבו אחרינו ברשתות החברתיות</h2>
+        <a href="https://www.facebook.com/bmw/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1024px-Facebook_f_logo_%282019%29.svg.png" alt="פייסבוק"></a>
+        <a href="https://www.instagram.com/bmw/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="אינסטגרם"></a>
+        <a href="https://www.youtube.com/user/BMW" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="יוטיוב"></a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 BMW. כל הזכויות שמורות.</p>
+    </footer>
+</body>
+</html>

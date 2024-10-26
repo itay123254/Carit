@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מיקומי סוכנויות BMW בישראל</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            top: 0;
+        }
+        nav .logo img {
+            width: 80px;
+            cursor: pointer;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        nav ul li a:hover {
+            color: #888;
+        }
+        .content {
+            padding: 100px 20px;
+        }
+        h1 {
+            color: blue;
+        }
+        .locations-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .locations-list li {
+            margin-bottom: 15px;
+        }
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            width: 100%;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/640px-BMW.svg.png" alt="לוגו BMW"></a>
+        <ul>
+            <li><a href="models.html">דגמים</a></li>
+            <li><a href="contact.html">יצירת קשר</a></li>
+            <li><a href="index.html">דף הבית</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1>מיקומי סוכנויות BMW בישראל</h1>
+        <ul class="locations-list">
+            <li><strong>תל אביב:</strong> דרך מנחם בגין 42, תל אביב</li>
+            <li><strong>חיפה:</strong> רחוב פל-ים 15, חיפה</li>
+            <li><strong>ירושלים:</strong> דרך חברון 101, ירושלים</li>
+            <li><strong>באר שבע:</strong> רחוב הנביאים 5, באר שבע</li>
+            <li><strong>אשדוד:</strong> שדרות בני ברית 24, אשדוד</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 BMW. כל הזכויות שמורות.</p>
+    </footer>
+</body>
+</html>
